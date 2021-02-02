@@ -1,0 +1,174 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Sun Jan 31 14:35:59 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+aes128key              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   2.2730 mW   (57%)
+  Net Switching Power  =   1.6870 mW   (43%)
+                         ---------
+Total Dynamic Power    =   3.9600 mW  (100%)
+
+Cell Leakage Power     = 817.5331 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        66.2914           19.2094        1.4415e+04           99.9162  (   2.09%)
+combinational  2.2067e+03        1.6678e+03        8.0312e+05        4.6776e+03  (  97.91%)
+--------------------------------------------------------------------------------------------------
+Total          2.2730e+03 uW     1.6870e+03 uW     8.1753e+05 nW     4.7775e+03 uW
+1
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Sun Jan 31 14:40:14 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+aes128key              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 459.5491 uW   (66%)
+  Net Switching Power  = 241.0598 uW   (34%)
+                         ---------
+Total Dynamic Power    = 700.6089 uW  (100%)
+
+Cell Leakage Power     = 816.8465 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential       121.4524            3.6028        1.4100e+04          139.1553  (   9.17%)
+combinational    338.0972          237.4559        8.0275e+05        1.3783e+03  (  90.83%)
+--------------------------------------------------------------------------------------------------
+Total            459.5496 uW       241.0588 uW     8.1685e+05 nW     1.5175e+03 uW
+1
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Mon Feb  1 13:08:28 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+aes128key              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 340.0352 uW   (68%)
+  Net Switching Power  = 162.2408 uW   (32%)
+                         ---------
+Total Dynamic Power    = 502.2759 uW  (100%)
+
+Cell Leakage Power     = 949.4623 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential       130.8152            2.0784        1.4021e+04          146.9146  (  10.12%)
+combinational    209.2205          160.1604        9.3544e+05        1.3048e+03  (  89.88%)
+--------------------------------------------------------------------------------------------------
+Total            340.0357 uW       162.2388 uW     9.4946e+05 nW     1.4517e+03 uW
+1
