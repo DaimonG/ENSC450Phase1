@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Mon Feb 1 13:00:08 2021
+# Created by write_sdc on Thu Feb 18 15:50:26 2021
 
 ###################################################################
 set sdc_version 2.1
@@ -136,7 +136,7 @@ set_load -pin_load 5 [get_ports {cipher[3]}]
 set_load -pin_load 5 [get_ports {cipher[2]}]
 set_load -pin_load 5 [get_ports {cipher[1]}]
 set_load -pin_load 5 [get_ports {cipher[0]}]
-create_clock [get_ports clock]  -name CLK  -period 3.33  -waveform {0 1.665}
+create_clock [get_ports clock]  -name CLK  -period 20  -waveform {0 10}
 set_max_delay 20  -from [get_ports reset]
 set_input_delay -clock CLK  -max 0.8  [get_ports clock]
 set_input_delay -clock CLK  -max 0.8  [get_ports reset]
