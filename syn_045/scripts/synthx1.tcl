@@ -1,4 +1,4 @@
-# Adapted from fcampi
+#Adapted from fcampi
 # atino@sfu.ca Dec 2018
 # Simple combinational Synthesis example
 
@@ -22,7 +22,7 @@ set search_path    "/local-scratch/localhome/escmc29/ensc450/lab2/ENSC450Lab2"
 
 # Target library is the library that is used by the synthesis tool 
 # in order to map the behavioral RTL logic that is being synthesized
-set target_library "stdx1.db"
+set target_library "stdX1.db"
 
 # The synthetic library variable specified pre-designed technology independent architectures pre-packaged by Synopsys
 set synthetic_library [list dw_foundation.sldb ]  
@@ -72,7 +72,7 @@ set_load                        5         [all_outputs]
 
 ## Timing Constraints
 # Establishing clock period:  Since clock is ideal, we don't want the tool to optimize the clk net so we set it as "dont touch"
-create_clock -name CLK -period 20 -waveform {0 10} {clock}
+create_clock -name CLK -period 19 -waveform {0 9.5} {clock}
 set_dont_touch_network CLK  
 
 # Delays imposed by the communication to/from other blocks in the system. 
@@ -95,9 +95,9 @@ compile -map_effort high -incremental_mapping
 # -----------------------------
 
 # Writing out reports: Used cells (Area), Timing, Power
-report_reference  >  ./results/$TOP.rpt
-report_timing    -transition_time -capacitance >> ./results/$TOP.rpt
-report_power     >> ./results/$TOP.rpt
+report_reference  >  ./results/X1Lib.rpt
+report_timing    -transition_time -capacitance >> ./results/X1Lib.rpt
+report_power     >> ./results/X1Lib.rpt
 
 # Writing out final netlist (Verilog/ddc) and relative constraints
 write -f ddc -hierarchy  -output ./results/$TOP.ddc

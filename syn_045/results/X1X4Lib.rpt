@@ -1,0 +1,179 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : reference
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Sun Feb 21 20:38:36 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+**FFGEN**                         0.000000     262      0.000000  n, u
+AND_X1             STDX1X4Lib    11.000000    9585  105435.000000 
+AND_X4             STDX1X4Lib    44.000000    9245  406780.000000 
+INV_X1             STDX1X4Lib     3.000000   47610  142830.000000 
+INV_X4             STDX1X4Lib    12.000000    4150  49800.000000  
+NAND_X1            STDX1X4Lib     8.000000   13103  104824.000000 
+NAND_X4            STDX1X4Lib    16.000000    2001  32016.000000  
+NOR_X1             STDX1X4Lib    10.000000    1052  10520.000000  
+NOR_X4             STDX1X4Lib    40.000000       7    280.000000  
+-----------------------------------------------------------------------------
+Total 9 references                                  852485.000000
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Sun Feb 21 20:38:37 2021
+****************************************
+
+Operating Conditions: ss_1.05V_125C   Library: STDX1X4Lib
+Wire Load Model Mode: top
+
+  Startpoint: sub_reg[8] (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: sub_reg[94]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                           Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  sub_reg[8]/clocked_on (**FFGEN**)        0.00      0.00       0.00 r
+  sub_reg[8]/Q (**FFGEN**)      48.00      0.00      0.00       0.00 r
+  U68216/Z (NAND_X4)            16.10      0.21      0.31       0.31 f
+  U68185/Z (NAND_X4)            16.10      0.17      0.29       0.61 r
+  U24958/Z (INV_X4)              4.10      0.07      0.16       0.77 f
+  U25019/Z (NAND_X1)             8.10      0.36      0.36       1.13 r
+  U2999/Z (NAND_X1)              3.10      0.22      0.36       1.48 f
+  U2991/Z (INV_X1)               8.10      0.31      0.36       1.85 r
+  U2990/Z (NAND_X1)              4.10      0.26      0.38       2.23 f
+  U2989/Z (NAND_X1)              4.10      0.23      0.32       2.55 r
+  U66071/Z (NAND_X1)             8.10      0.46      0.49       3.04 f
+  U66084/Z (NAND_X1)             4.10      0.25      0.36       3.40 r
+  U3433/Z (NAND_X1)             16.10      0.81      0.74       4.14 f
+  U68931/Z (NAND_X4)            16.10      0.25      0.44       4.57 r
+  U69034/Z (NAND_X4)            16.10      0.26      0.37       4.94 f
+  U69059/Z (NAND_X4)            12.10      0.23      0.28       5.22 r
+  U51232/Z (INV_X4)             12.10      0.12      0.22       5.44 f
+  U51235/Z (INV_X1)              6.10      0.24      0.30       5.74 r
+  U60147/Z (INV_X1)              6.10      0.16      0.26       6.00 f
+  U60156/Z (INV_X1)              8.10      0.31      0.34       6.34 r
+  U48389/Z (AND_X1)             16.10      0.22      2.42       8.76 r
+  U52219/Z (AND_X1)             12.10      0.19      1.97      10.73 r
+  U21022/Z (INV_X4)              4.10      0.07      0.16      10.89 f
+  U41100/Z (NAND_X1)             3.10      0.17      0.26      11.15 r
+  U47248/Z (INV_X1)              6.10      0.15      0.24      11.39 f
+  U47249/Z (INV_X1)              4.10      0.19      0.26      11.66 r
+  U25111/Z (AND_X1)              3.10      0.10      0.62      12.28 r
+  U25110/Z (INV_X1)             16.10      0.27      0.36      12.64 f
+  C26826/Z (NAND_X4)            16.10      0.18      0.31      12.95 r
+  C26838/Z (AND_X4)             12.10      0.18      0.48      13.43 r
+  U21038/Z (INV_X4)              4.10      0.07      0.16      13.59 f
+  U41109/Z (NAND_X1)             4.10      0.21      0.28      13.87 r
+  U41108/Z (AND_X1)              3.10      0.10      0.62      14.49 r
+  U41107/Z (INV_X1)             16.10      0.27      0.36      14.85 f
+  C26843/Z (NAND_X4)            16.10      0.18      0.31      15.16 r
+  C26892/Z (AND_X4)              3.10      0.08      0.38      15.54 r
+  U50054/Z (INV_X1)             16.10      0.27      0.35      15.89 f
+  C26894/Z (NAND_X4)            20.10      0.20      0.33      16.23 r
+  U58126/Z (NAND_X4)             8.10      0.18      0.29      16.52 f
+  U25031/Z (NAND_X1)             4.10      0.22      0.30      16.82 r
+  U24970/Z (NAND_X1)             7.10      0.39      0.46      17.28 f
+  U66774/Z (INV_X1)              3.10      0.19      0.28      17.56 r
+  U45626/Z (INV_X1)              4.10      0.12      0.22      17.78 f
+  U45625/Z (NAND_X1)             8.10      0.37      0.37      18.15 r
+  U63499/Z (NAND_X1)             8.10      0.45      0.52      18.67 f
+  U64000/Z (AND_X1)              3.10      0.07      0.48      19.15 f
+  U65587/Z (INV_X1)              4.10      0.18      0.25      19.40 r
+  U66367/Z (NAND_X1)             4.10      0.25      0.36      19.75 f
+  U805/Z (NAND_X1)               0.10      0.08      0.23      19.98 r
+  sub_reg[94]/next_state (**FFGEN**)       0.08      0.00      19.98 r
+  data arrival time                                            19.98
+
+  clock CLK (rise edge)                             20.00      20.00
+  clock network delay (ideal)                        0.00      20.00
+  sub_reg[94]/clocked_on (**FFGEN**)                 0.00      20.00 r
+  library setup time                                 0.00      20.00
+  data required time                                           20.00
+  ---------------------------------------------------------------------
+  data required time                                           20.00
+  data arrival time                                           -19.98
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.02
+
+
+1
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : aes128key
+Version: O-2018.06-SP5
+Date   : Sun Feb 21 20:38:39 2021
+****************************************
+
+
+Library(s) Used:
+
+    STDX1X4Lib (File: /local-scratch/localhome/escmc29/ensc450/lab2/ENSC450Lab2/stdX1X4.db)
+
+Information: The cells in your design are not characterized for internal power. (PWR-229)
+
+Operating Conditions: ss_1.05V_125C   Library: STDX1X4Lib
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =   3.0828 mW  (100%)
+                         ---------
+Total Dynamic Power    =   3.0828 mW  (100%)
+
+Cell Leakage Power     = 100.6058 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000          131.8800            0.0000          131.8800  (   4.28%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000        2.9509e+03        1.0061e+05        2.9510e+03  (  95.72%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW     3.0828e+03 uW     1.0061e+05 pW     3.0829e+03 uW
+1

@@ -4,7 +4,7 @@ Information: Updating graph... (UID-83)
 Report : reference
 Design : aes128key
 Version: O-2018.06-SP5
-Date   : Thu Feb 18 15:50:22 2021
+Date   : Sun Feb 21 19:17:13 2021
 ****************************************
 
 Attributes:
@@ -20,17 +20,82 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
-**FFGEN**                         0.000000     262      0.000000  n, u
-AND_X1             STDX1X4Lib    11.000000   12338  135718.000000 
-AND_X4             STDX1X4Lib    44.000000    5258  231352.000000 
-INV_X1             STDX1X4Lib     3.000000   43166  129498.000000 
-INV_X4             STDX1X4Lib    12.000000    5017  60204.000000  
-NAND_X1            STDX1X4Lib     8.000000   13283  106264.000000 
-NAND_X4            STDX1X4Lib    16.000000    2691  43056.000000  
-NOR_X1             STDX1X4Lib    10.000000     651   6510.000000  
-NOR_X4             STDX1X4Lib    40.000000       8    320.000000  
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000     128    136.192001  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000   19131  25444.230821  
+AND3_X2            NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+AND4_X2            NangateOpenCellLibrary
+                                  1.862000       4      7.448000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     462    614.460020  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000     109    231.952002  
+AOI222_X2          NangateOpenCellLibrary
+                                  3.724000      19     70.756000  
+BUF_X8             NangateOpenCellLibrary
+                                  3.458000      40    138.319998  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      25     19.949999  
+CLKBUF_X2          NangateOpenCellLibrary
+                                  1.064000      42     44.688000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000    1923   2557.590083  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     257   1162.153958  n
+DFF_X2             NangateOpenCellLibrary
+                                  5.054000       5     25.270000  n
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       4     10.640000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000    1163    618.716006  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000     671    535.457985  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000     283    376.390012  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000      64    153.216003  
+INV_X16            NangateOpenCellLibrary
+                                  4.522000      21     94.961997  
+INV_X32            NangateOpenCellLibrary
+                                  8.778000       5     43.889999  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000     133    247.645998  
+MUX2_X2            NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000     196    156.407996  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      33     26.333999  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      64     68.096001  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      18     23.940001  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000      10     10.640000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000    9565  12721.450410  
+OR2_X4             NangateOpenCellLibrary
+                                  2.394000      15     35.910001  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000      63    100.547997  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       6     15.960001  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000     659   1051.763971  
 -----------------------------------------------------------------------------
-Total 9 references                                  712922.000000
+Total 37 references                                 46773.175260
 1
 Information: Updating design information... (UID-85)
  
@@ -43,83 +108,73 @@ Report : timing
         -capacitance
 Design : aes128key
 Version: O-2018.06-SP5
-Date   : Thu Feb 18 15:50:23 2021
+Date   : Sun Feb 21 19:17:14 2021
 ****************************************
 
-Operating Conditions: ss_1.05V_125C   Library: STDX1X4Lib
+Operating Conditions: slow   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
   Startpoint: roundCounter_reg[4]
               (rising edge-triggered flip-flop clocked by CLK)
-  Endpoint: sub_reg[20]
+  Endpoint: sub_reg[33]
             (rising edge-triggered flip-flop clocked by CLK)
   Path Group: CLK
   Path Type: max
 
-  Point                                          Cap     Trans      Incr       Path
-  ------------------------------------------------------------------------------------
-  clock CLK (rise edge)                                             0.00       0.00
-  clock network delay (ideal)                                       0.00       0.00
-  roundCounter_reg[4]/clocked_on (**FFGEN**)              0.00      0.00       0.00 r
-  roundCounter_reg[4]/QN (**FFGEN**)           32.00      0.00      0.00       0.00 r
-  U25089/Z (NAND_X4)                           12.10      0.17      0.28       0.28 f
-  U54086/Z (INV_X4)                             4.10      0.10      0.18       0.46 r
-  U24930/Z (NAND_X1)                           12.10      0.62      0.58       1.04 f
-  U59826/Z (INV_X4)                            12.10      0.19      0.32       1.36 r
-  U41954/Z (NAND_X1)                           18.10      0.91      0.78       2.14 f
-  U65361/Z (INV_X1)                             3.10      0.25      0.37       2.51 r
-  U25721/Z (INV_X1)                             6.10      0.16      0.26       2.77 f
-  U25722/Z (INV_X1)                            12.10      0.42      0.43       3.20 r
-  U5923/Z (NAND_X1)                             8.10      0.45      0.53       3.73 f
-  U5921/Z (NAND_X1)                             3.10      0.22      0.34       4.06 r
-  U3144/Z (INV_X1)                             16.10      0.29      0.40       4.46 f
-  U60662/Z (NAND_X4)                           16.10      0.18      0.31       4.78 r
-  U61952/Z (NAND_X4)                            4.10      0.15      0.26       5.03 f
-  U39956/Z (NAND_X1)                           12.10      0.53      0.46       5.49 r
-  U58123/Z (INV_X4)                             5.10      0.11      0.22       5.71 f
-  U37643/Z (NOR_X1)                            12.10      1.14      0.99       6.71 r
-  U58122/Z (INV_X4)                             3.10      0.15      0.28       6.98 f
-  U39803/Z (INV_X1)                             9.10      0.34      0.36       7.35 r
-  U53070/Z (INV_X1)                            12.10      0.25      0.37       7.72 f
-  I_3101/Z (INV_X4)                             3.10      0.10      0.18       7.90 r
-  U53071/Z (INV_X1)                             9.10      0.18      0.27       8.17 f
-  U53074/Z (INV_X1)                             3.10      0.16      0.25       8.41 r
-  U45247/Z (INV_X1)                            12.10      0.23      0.33       8.74 f
-  U45248/Z (INV_X1)                            15.10      0.52      0.51       9.25 r
-  U39272/Z (INV_X1)                             6.10      0.19      0.31       9.56 f
-  U39273/Z (INV_X1)                            12.10      0.43      0.44      10.00 r
-  U60510/Z (AND_X1)                            16.10      0.22      2.22      12.22 r
-  U63353/Z (AND_X1)                            16.10      0.22      2.56      14.78 r
-  C12729/Z (AND_X4)                             3.10      0.77      0.39      15.16 r
-  U31311/Z (INV_X1)                             4.10      0.19      0.31      15.48 f
-  U31308/Z (NAND_X1)                           16.10      0.66      0.56      16.03 r
-  C12733/Z (AND_X4)                             3.10      0.77      0.47      16.51 r
-  U47066/Z (INV_X1)                             4.10      0.19      0.31      16.82 f
-  U47064/Z (NAND_X1)                            4.10      0.22      0.30      17.12 r
-  U46553/Z (AND_X1)                             3.10      0.10      0.62      17.74 r
-  U49601/Z (INV_X1)                             4.10      0.11      0.20      17.95 f
-  U54025/Z (NAND_X1)                            4.10      0.21      0.29      18.24 r
-  U54307/Z (NAND_X1)                            4.10      0.26      0.36      18.60 f
-  U61634/Z (NAND_X1)                            4.10      0.23      0.32      18.92 r
-  U1241/Z (NAND_X1)                             4.10      0.28      0.37      19.29 f
-  U54488/Z (AND_X1)                             4.10      0.30      0.47      19.76 f
-  U1237/Z (NAND_X1)                             0.10      0.09      0.24      20.00 r
-  sub_reg[20]/next_state (**FFGEN**)                      0.09      0.00      20.00 r
-  data arrival time                                                           20.00
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  aes128key          5K_hvratio_1_1        NangateOpenCellLibrary
 
-  clock CLK (rise edge)                                            20.00      20.00
-  clock network delay (ideal)                                       0.00      20.00
-  sub_reg[20]/clocked_on (**FFGEN**)                                0.00      20.00 r
-  library setup time                                                0.00      20.00
-  data required time                                                          20.00
-  ------------------------------------------------------------------------------------
-  data required time                                                          20.00
-  data arrival time                                                          -20.00
-  ------------------------------------------------------------------------------------
-  slack (MET)                                                                  0.00
+  Point                           Cap     Trans      Incr       Path
+  ---------------------------------------------------------------------
+  clock CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  roundCounter_reg[4]/CK (DFF_X2)          0.00      0.00       0.00 r
+  roundCounter_reg[4]/Q (DFF_X2)
+                                37.08      0.05      0.31       0.31 f
+  C2285/ZN (OR2_X2)              1.82      0.03      0.19       0.50 f
+  C2286/ZN (OR2_X2)              1.82      0.03      0.18       0.68 f
+  C2287/ZN (OR2_X2)              3.12      0.03      0.19       0.87 f
+  I_24/ZN (INV_X2)               7.16      0.04      0.08       0.95 r
+  U2358/Z (CLKBUF_X3)            6.42      0.03      0.11       1.06 r
+  U2396/ZN (INV_X4)              3.04      0.01      0.06       1.12 f
+  U2370/Z (CLKBUF_X3)           13.64      0.03      0.12       1.25 f
+  U2363/ZN (INV_X1)             25.21      0.21      0.27       1.51 r
+  U1074/ZN (AOI22_X1)            1.79      0.05      0.11       1.62 f
+  U1073/ZN (INV_X1)              2.55      0.03      0.07       1.69 r
+  C33618/Z (XOR2_X1)             1.95      0.09      0.18       1.88 r
+  U1322/ZN (AOI22_X1)           10.94      0.10      0.13       2.00 f
+  U2322/ZN (INV_X8)            222.52      0.23      0.38       2.38 r
+  U2321/ZN (INV_X4)            154.57      0.11      0.34       2.72 f
+  C15099/ZN (AND2_X2)            1.82      0.02      0.18       2.91 f
+  C15100/ZN (OR2_X2)             7.61      0.03      0.20       3.11 f
+  C15180/ZN (AND2_X2)            1.82      0.02      0.12       3.22 f
+  C15181/ZN (OR2_X2)             1.80      0.03      0.18       3.40 f
+  C15183/ZN (AND2_X2)            1.82      0.02      0.11       3.51 f
+  C15184/ZN (OR2_X2)             1.80      0.03      0.18       3.69 f
+  C15186/ZN (AND2_X2)            1.82      0.02      0.11       3.79 f
+  C15187/ZN (OR2_X2)             1.80      0.03      0.18       3.97 f
+  C15189/ZN (AND2_X2)            1.82      0.02      0.11       4.08 f
+  C15190/ZN (OR2_X2)             1.78      0.03      0.18       4.26 f
+  U557/ZN (AOI222_X1)            1.92      0.19      0.35       4.60 r
+  U556/ZN (NAND2_X1)             1.34      0.03      0.08       4.69 f
+  sub_reg[33]/D (DFF_X1)                   0.03      0.01       4.70 f
+  data arrival time                                             4.70
+
+  clock CLK (rise edge)                              5.00       5.00
+  clock network delay (ideal)                        0.00       5.00
+  sub_reg[33]/CK (DFF_X1)                            0.00       5.00 r
+  library setup time                                -0.17       4.83
+  data required time                                            4.83
+  ---------------------------------------------------------------------
+  data required time                                            4.83
+  data arrival time                                            -4.70
+  ---------------------------------------------------------------------
+  slack (MET)                                                   0.14
 
 
 1
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
@@ -129,35 +184,38 @@ Report : power
         -analysis_effort low
 Design : aes128key
 Version: O-2018.06-SP5
-Date   : Thu Feb 18 15:50:25 2021
+Date   : Sun Feb 21 19:17:15 2021
 ****************************************
 
 
 Library(s) Used:
 
-    STDX1X4Lib (File: /local-scratch/localhome/escmc29/ensc450/lab2/ENSC450Lab2/stdx1x4.db)
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
 
-Information: The cells in your design are not characterized for internal power. (PWR-229)
 
-Operating Conditions: ss_1.05V_125C   Library: STDX1X4Lib
+Operating Conditions: slow   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
+Design        Wire Load Model            Library
+------------------------------------------------
+aes128key              5K_hvratio_1_1    NangateOpenCellLibrary
 
-Global Operating Voltage = 1.05 
+
+Global Operating Voltage = 0.95 
 Power-specific unit information :
     Voltage Units = 1V
     Capacitance Units = 1.000000ff
     Time Units = 1ns
     Dynamic Power Units = 1uW    (derived from V,C,T units)
-    Leakage Power Units = 1pW
+    Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =   0.0000 uW    (0%)
-  Net Switching Power  =   2.6610 mW  (100%)
+  Cell Internal Power  =   3.6695 mW   (65%)
+  Net Switching Power  =   2.0030 mW   (35%)
                          ---------
-Total Dynamic Power    =   2.6610 mW  (100%)
+Total Dynamic Power    =   5.6725 mW  (100%)
 
-Cell Leakage Power     =  99.2544 nW
+Cell Leakage Power     =   1.0989 mW
 
 
                  Internal         Switching           Leakage            Total
@@ -167,9 +225,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.0000          113.5613            0.0000          113.5613  (   4.27%)
+register         178.3055           33.7908        1.4393e+04          226.4886  (   3.34%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.0000        2.5473e+03        9.9254e+04        2.5474e+03  (  95.73%)
+combinational  3.4913e+03        1.9692e+03        1.0845e+06        6.5449e+03  (  96.66%)
 --------------------------------------------------------------------------------------------------
-Total              0.0000 uW     2.6608e+03 uW     9.9254e+04 pW     2.6609e+03 uW
+Total          3.6696e+03 uW     2.0030e+03 uW     1.0989e+06 nW     6.7714e+03 uW
 1

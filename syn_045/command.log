@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP5 for linux64 -- Jan 17, 2019
-#@ # Date:   Thu Feb 18 15:48:06 2021
+#@ # Date:   Sun Feb 21 20:36:42 2021
 #@ # Run by: escmc29@ensc-esil-18
 #@ 
 
@@ -6659,7 +6659,7 @@ source -echo -verbose /local-scratch/localhome/escmc29/ensc450/lab2/lab1/ENSC450
 #@ 
 #@ # Target library is the library that is used by the synthesis tool 
 #@ # in order to map the behavioral RTL logic that is being synthesized
-#@ set target_library "stdx1x4.db"
+#@ set target_library "stdX1X4.db"
 #@ 
 #@ # The synthetic library variable specified pre-designed technology independent architectures pre-packaged by Synopsys
 #@ set synthetic_library [list dw_foundation.sldb ]  
@@ -6730,9 +6730,9 @@ source -echo -verbose /local-scratch/localhome/escmc29/ensc450/lab2/lab1/ENSC450
 #@ # -----------------------------
 #@ 
 #@ # Writing out reports: Used cells (Area), Timing, Power
-#@ report_reference  >  ./results/$TOP.rpt
-#@ report_timing    -transition_time -capacitance >> ./results/$TOP.rpt
-#@ report_power     >> ./results/$TOP.rpt
+#@ report_reference  >  ./results/X1X4Lib.rpt
+#@ report_timing    -transition_time -capacitance >> ./results/X1X4Lib.rpt
+#@ report_power     >> ./results/X1X4Lib.rpt
 #@ 
 #@ # Writing out final netlist (Verilog/ddc) and relative constraints
 #@ write -f ddc -hierarchy  -output ./results/$TOP.ddc
