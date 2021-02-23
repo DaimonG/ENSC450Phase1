@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version O-2018.06-SP5 for linux64 -- Jan 17, 2019
-#@ # Date:   Sun Feb 21 20:36:42 2021
+#@ # Date:   Mon Feb 22 20:51:50 2021
 #@ # Run by: escmc29@ensc-esil-18
 #@ 
 
@@ -6707,7 +6707,7 @@ source -echo -verbose /local-scratch/localhome/escmc29/ensc450/lab2/lab1/ENSC450
 #@ 
 #@ ## Timing Constraints
 #@ # Establishing clock period:  Since clock is ideal, we don't want the tool to optimize the clk net so we set it as "dont touch"
-#@ create_clock -name CLK -period 20 -waveform {0 10} {clock}
+#@ create_clock -name CLK -period 25 -waveform {0 12.5} {clock}
 #@ set_dont_touch_network CLK  
 #@ 
 #@ # Delays imposed by the communication to/from other blocks in the system. 
