@@ -102,6 +102,6 @@ report_power     >> ./results/X1X4Lib.rpt
 # Writing out final netlist (Verilog/ddc) and relative constraints
 write -f ddc -hierarchy  -output ./results/$TOP.ddc
 write_sdc -nosplit               ./results/$TOP.sdc
-write -format verilog -hier -o   ./results/$TOP.ref.v
+write -format verilog -hier -o   ./results/X1X4Lib.ref.v
 
 exit
